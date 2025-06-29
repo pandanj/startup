@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桥梁智能运维 - 科润科技</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .team-member {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 5px solid #667eea;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #45a049;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .achievement-item {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content-card {
+                padding: 20px;
+            }
+
+            .team-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-title {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌉 轻量化桥梁伸缩缝群一体化智能监测系统</h1>
+            <p>基于边缘计算的智能监测解决方案</p>
+            <p class="competition">第十届"创客中国"江苏省中小企业创新创业大赛 - 初创企业组</p>
+            </div>
+        </div>
+
+        <div class="pdf-link">
+            <a href="#" class="pdf-btn">📄 查看完整项目海报</a>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title">项目概述</h2>
+            <p style="font-size: 1.1rem; text-align: center; margin-bottom: 30px;">
+                专注<span class="highlight">桥梁智能运维技术</span>产业化，致力于打造<span class="highlight">行业领先</span>的监测解决方案
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">150万</div>
+                    <div>累计营收</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">23篇</div>
+                    <div>学术论文</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7项</div>
+                    <div>发明专利</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100万</div>
+                    <div>政府资助</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title">核心团队</h2>
+            <div class="team-section">
+                <div class="team-member">
+                    <h3>🎯 领军人物：顾建成 博士</h3>
+                    <p><strong>日本东北大学</strong>博士、博士后</p>
+                    <p>高校科研人员，公司创始人兼CEO</p>
+                    <p class="highlight">负责产品设计与研发，全面负责公司管理</p>
+                </div>
+                <div class="team-member">
+                    <h3>⚡ 核心成员：李长钊 博士</h3>
+                    <p><strong>同济大学</strong>博士</p>
+                    <p>交通行业专家，核心技术开发人员</p>
+                    <p class="highlight">负责边缘计算设备研发、核心算法优化</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2 class="section-title">核心优势</h2>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <h4>🌍 国际化背景</h4>
+                    <p>国际化学术背景与工程实践深度融合</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>🔧 技术壁垒</h4>
+                    <p>掌握多项核心专利技术，形成技术壁垒</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>🎯 市场洞察</h4>
+                    <p>深度理解行业痛点，产品贴合市场需求</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>🤝 产学研融合</h4>
+                    <p>与多家科研院所建立合作关系</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2 style="text-align: center; margin-bottom: 30px;">💼 商务合作意向</h2>
+            <p style="text-align: center; margin-bottom: 30px; opacity: 0.9;">
+                如果您对我们的项目感兴趣，请留下您的联系方式，我们将尽快与您联系
+            </p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">姓名 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">公司/机构</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">职位</label>
+                    <input type="text" id="position" name="position">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">联系电话 *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">合作意向 *</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">请选择</option>
+                        <option value="investment">投资合作</option>
+                        <option value="business">商务合作</option>
+                        <option value="technology">技术交流</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" name="message" placeholder="请简要描述您的合作意向或想了解的内容..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">提交合作意向</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 收集表单数据
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // 这里您可以添加数据提交逻辑
+            // 比如发送到您的后端API或Google Forms等
+
+            console.log('提交的数据:', data);
+
+            // 显示成功提示
+            alert('感谢您的关注！我们会尽快与您联系。');
+
+            // 清空表单
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
